@@ -31,6 +31,8 @@ public class Main {
         settings.put(SaslConfigs.SASL_MECHANISM, "PLAIN");
         settings.put(SaslConfigs.SASL_JAAS_CONFIG,
                 "org.apache.kafka.common.security.plain.PlainLoginModule required username=\"nana\" password=\"nana-secret\";");
+        // settings.put(SaslConfigs.SASL_JAAS_CONFIG,
+        //         "org.apache.kafka.common.security.plain.PlainLoginModule required username=\"ivan\" password=\"ivan-secret\";");
 
         StreamsBuilder streamsBuilder = new StreamsBuilder();
         TopologyBuilder topologyBuilder = new TopologyBuilder();
